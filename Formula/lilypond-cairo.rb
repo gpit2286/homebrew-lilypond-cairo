@@ -1,5 +1,5 @@
 class LilypondCairo < Formula
-  desc "Music engraving system"
+  desc "Music engraving system with optional Cairo backend"
   homepage "https://lilypond.org"
   url "https://lilypond.org/download/sources/v2.24/lilypond-2.24.4.tar.gz"
   sha256 "e96fa03571c79f20e1979653afabdbe4ee42765a3d9fd14953f0cd9eea51781c"
@@ -17,16 +17,6 @@ class LilypondCairo < Formula
   livecheck do
     url "https://lilypond.org/source.html"
     regex(/href=.*?lilypond[._-]v?(\d+(?:\.\d+)+)\.t/i)
-  end
-
-  bottle do
-    rebuild 1
-    sha256 arm64_sequoia: "186ccba4e185bdb0160e66bc68c4e70594d77b9d18a863718886667817b0f8b0"
-    sha256 arm64_sonoma:  "80da0e56c2e27506e4a82b7cfcdfe9ca5e819ce2a52bc9c1cbdcc597557862db"
-    sha256 arm64_ventura: "38a76fb76615646d4b43b6578d368fac8daee24834dc049ea0f50ffaeca73b33"
-    sha256 sonoma:        "b31020b0176335c832d55556e5709b45b54ac04b2c0d04129d16a6a25ef8e6e7"
-    sha256 ventura:       "a4112ff2f62a0b79a6de8ba3c34db2167d0076949ac617eeb81f9335dd461607"
-    sha256 x86_64_linux:  "d3bd2174c750e48ee24e19959f3587eaeaca0e155ba8d8dc973e3d43511d89d5"
   end
 
   head do
