@@ -1,4 +1,4 @@
-class Lilypond < Formula
+class LilypondCairo < Formula
   desc "Music engraving system"
   homepage "https://lilypond.org"
   url "https://lilypond.org/download/sources/v2.24/lilypond-2.24.4.tar.gz"
